@@ -120,17 +120,57 @@
             </article>
         </main>
         <footer class="container">
-            <div class="col-1-3">
-                <a href="https://www.instagram.com/mikhail12340987/">Instagram</a>
-            </div>
-            <div class="col-1-3">
-                <a href="https://vk.com/mmm1403">VK</a>
-            </div>
-            <div class="col-1-3">
-                <a href="https://tlgg.ru/@Atanareso">Telegram</a>
+            <form>
+                <p>
+                    <fieldset>
+                        <legend>Do you have a drivers's license?<abbr title="This field is mandatory" aria-label="required">*</abbr></legend>
+                        <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+                        <input type="radio" required name="driver" id="r2" value="yes"><label for="r2">No</label>
+                    </fieldset>
+                </p>
+                <p>
+                    <label for="n1">How old are you?</label>
+                    <input type="number" min="12" max="120" id="n1" name="age" pattern="\d+">
+                </p>
+                <p>
+                    <label for="t1">What's your favourite fruit?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+                    <input type="text" id="t1" name="fruit" list="l1" required
+                    pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+                    <datalist id="l1">
+                        <option>Banana</option>
+                        <option>Cherry</option>
+                        <option>Apple</option>
+                        <option>Strawberry</option>
+                        <option>Lemon</option>
+                        <option>Orange</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="t2">What's your email adress?</label>
+                    <input type="email" name="email" id="t2">
+                </p>
+                <p>
+                    <label for="t3">Leave a short message</label>
+                    <textarea name="msg" id="t3" maxlength="140" rows="5"></textarea>
+                </p>
+                <p>
+                    <button>Submit</button>
+                </p>
+            </form>
+            <div class="row">
+                <div class="col-1-3">
+                    <a href="https://www.instagram.com/mikhail12340987/">Instagram</a>
+                </div>
+                <div class="col-1-3">
+                    <a href="https://vk.com/mmm1403">VK</a>
+                </div>
+                <div class="col-1-3">
+                    <a href="https://tlgg.ru/@Atanareso">Telegram</a>
+                </div>
             </div>
         </footer>
 
         <script src="script.js"></script>
     </body>
+    <!-- Комменатрий -->
 </html>
