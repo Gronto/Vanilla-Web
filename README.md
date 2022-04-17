@@ -1,2 +1,2 @@
 # Vanilla-Web
-I learning basics of web development
+I study basics of web development
